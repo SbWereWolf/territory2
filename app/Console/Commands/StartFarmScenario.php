@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Farm\Chicken;
 use App\Farm\Cow;
+use App\Farm\Frog;
 use app\Scenario\Scenario;
 use Illuminate\Console\Command;
 
@@ -48,6 +49,9 @@ class StartFarmScenario extends Command
             'second week' => [
                 Cow::class => 1,
                 Chicken::class => 5,
+            ],
+            'third week' => [
+                Frog::class => 100,
             ]
         ];
         $scenario->play($days,$roadmap);

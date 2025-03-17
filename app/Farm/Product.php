@@ -6,7 +6,7 @@ class Product
 {
     public function __construct(
         public readonly string $type,
-        public readonly int $quantity
+        public readonly float $quantity
     ) {
     }
 }
